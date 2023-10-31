@@ -4,10 +4,10 @@ const {pg} = require("pg")
 const { POSTGRES_URL_NON_POOLING } = process.env;
 
 //Importo Los Modelos
-const CountryModel = require('./models/Country');
-const ActivityModel = require('./models/Activity');
-const UserModel = require('./models/User')
-const RecordModel = require('./models/Record')
+const CountryModel = require('./models/Country.js');
+const ActivityModel = require('./models/Activity.js');
+const UserModel = require('./models/User.js')
+const RecordModel = require('./models/Record.js')
 
 
 const sequelize = new Sequelize(
