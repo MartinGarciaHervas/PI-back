@@ -11,7 +11,7 @@ const RecordModel = require('./models/Record')
 
 
 const sequelize = new Sequelize(
-  `${POSTGRES_URL_NON_POOLING}`,
+  `${POSTGRES_URL_NON_POOLING}?sslmode=require`,
   { logging: false, native: false, dialect: "postgres", dialectModule: pg });
 
 
