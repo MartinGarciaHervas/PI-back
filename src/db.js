@@ -1,6 +1,6 @@
 require("dotenv").config();
 const { Sequelize } = require("sequelize");
-const { DB_USER, DB_PASSWORD, DB_HOST } = process.env;
+const { DATABASE_PRIVATE_URL } = process.env;
 
 //Importo Los Modelos
 const CountryModel = require('./models/Country');
@@ -10,7 +10,7 @@ const RecordModel = require('./models/Record')
 
 
 const sequelize = new Sequelize(
-  `postgres://${DB_USER}:${DB_PASSWORD}@${DB_HOST}/proyectoindividualcountries`,
+  `${DATABASE_PRIVATE_URL}`,
   { logging: false, native: false });
 
 
