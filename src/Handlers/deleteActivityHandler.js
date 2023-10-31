@@ -1,4 +1,4 @@
-const deleteActivityController = require('../Controllers/deleteActivityController')
+const deleteActivityController = require('../Controllers/deleteActivityController.js')
 
 const deleteActivityHandler = async(req, res)=>{
     try {

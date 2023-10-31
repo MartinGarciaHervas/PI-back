@@ -1,4 +1,4 @@
-const getRecordController = require("../Controllers/getRecordController")
+const getRecordController = require("../Controllers/getRecordController.js")
 
 const getRecordHandler = async (req, res) => {
     try {

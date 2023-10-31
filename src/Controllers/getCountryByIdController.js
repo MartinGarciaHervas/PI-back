@@ -1,4 +1,4 @@
-const { Country } = require('../db');
+const { Country } = require('../db.js');
 
 const getCountryByIdController = async (idPais) => {
     try {

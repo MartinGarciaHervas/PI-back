@@ -1,4 +1,4 @@
-const {Record} = require('../db')
+const {Record} = require('../db.js')
 
 const getRecordController = async () => {
     try {

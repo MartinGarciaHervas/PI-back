@@ -1,6 +1,6 @@
 require("dotenv").config();
 const { Sequelize } = require("sequelize");
-const { DATABASE_PRIVATE_URL } = process.env;
+const { POSTGRES_URL_NON_POOLING } = process.env;
 
 //Importo Los Modelos
 const CountryModel = require('./models/Country');
@@ -10,7 +10,7 @@ const RecordModel = require('./models/Record')
 
 
 const sequelize = new Sequelize(
-  `${DATABASE_PRIVATE_URL}`,
+  `${POSTGRES_URL_NON_POOLING}`,
   { logging: false, native: false });
 
 

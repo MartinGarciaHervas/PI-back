@@ -1,4 +1,4 @@
-const { Activity, Country } = require('../db')
+const { Activity, Country } = require('../db.js')
 
 const deleteCountryFromActivityController = async (id_country, id_activity) => {
     try {

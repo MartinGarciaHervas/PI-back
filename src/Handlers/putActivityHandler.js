@@ -1,4 +1,4 @@
-const editActivityController = require("../Controllers/putActivityController")
+const editActivityController = require("../Controllers/putActivityController.js")
 
 const editActivityHandler= async(req, res)=>{
     try {

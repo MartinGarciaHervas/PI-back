@@ -1,4 +1,4 @@
-const {Country} = require('../db');
+const {Country} = require('../db.js');
 const axios = require('axios')
 
 //Funcion que toma el texto con tildes y lo devuelve sin ellos

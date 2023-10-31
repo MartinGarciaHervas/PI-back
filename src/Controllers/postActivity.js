@@ -1,4 +1,4 @@
-const {Activity, Country} = require('../db');
+const {Activity, Country} = require('../db.js');
 
 const postActivityController = async(name, difficulty, duration, season, CountryId)=>{
     try {

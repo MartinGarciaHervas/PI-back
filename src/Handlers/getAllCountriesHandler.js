@@ -1,4 +1,4 @@
-const getAllCountries = require('../Controllers/getAllCountries');
+const getAllCountries = require('../Controllers/getAllCountries.js');
 
 const getAllCountriesHandler = async(req,res)=>{
     try {

@@ -1,4 +1,4 @@
-const recordController = require("../Controllers/postRecordController")
+const recordController = require("../Controllers/postRecordController.js")
 
 const recordHandler = async(req, res) =>{
     try {

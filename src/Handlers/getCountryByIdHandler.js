@@ -1,4 +1,4 @@
-const getCountryByIdController = require("../Controllers/getCountryByIdController");
+const getCountryByIdController = require("../Controllers/getCountryByIdController.js");
 
 const getCountryByIdHandler= async(req, res)=>{
     try {

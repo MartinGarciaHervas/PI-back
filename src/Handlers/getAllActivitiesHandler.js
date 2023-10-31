@@ -1,4 +1,4 @@
-const getAllActivities = require("../Controllers/getAllActivities")
+const getAllActivities = require("../Controllers/getAllActivities.js")
 
 const getAllActivitiesHandler = async(req, res)=>{
     try {

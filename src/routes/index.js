@@ -1,17 +1,17 @@
 const { Router } = require("express");
 
 //Handlers
-const getAllActivitiesHandler = require("../Handlers/getAllActivitiesHandler");
-const getAllCountriesHandler = require("../Handlers/getAllCountriesHandler");
-const deleteActivityHandler = require("../Handlers/deleteActivityHandler");
-const postUserHandler = require("../Handlers/postUserHandler");
-const loginHandler = require("../Handlers/login");
-const recordHandler = require("../Handlers/postRecordHandler");
-const getRecordHandler = require("../Handlers/getRecordHandler");
-const deleteCountryFromActivityHandler = require("../Handlers/deleteCountryFromActivity");
-const editActivityHandler = require("../Handlers/putActivityHandler");
-const getCountryByIdHandler = require("../Handlers/getCountryByIdHandler");
-const postActivityHandler = require("../Handlers/postActivityHandler");
+const getAllActivitiesHandler = require("../Handlers/getAllActivitiesHandler.js");
+const getAllCountriesHandler = require("../Handlers/getAllCountriesHandler.js");
+const deleteActivityHandler = require("../Handlers/deleteActivityHandler.js");
+const postUserHandler = require("../Handlers/postUserHandler.js");
+const loginHandler = require("../Handlers/login.js");
+const recordHandler = require("../Handlers/postRecordHandler.js");
+const getRecordHandler = require("../Handlers/getRecordHandler.js");
+const deleteCountryFromActivityHandler = require("../Handlers/deleteCountryFromActivity.js");
+const editActivityHandler = require("../Handlers/putActivityHandler.js");
+const getCountryByIdHandler = require("../Handlers/getCountryByIdHandler.js");
+const postActivityHandler = require("../Handlers/postActivityHandler.js");
 
 //Router
 const mainRouter = Router();

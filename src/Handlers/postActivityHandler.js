@@ -1,4 +1,4 @@
-const postActivityController = require("../Controllers/postActivity")
+const postActivityController = require("../Controllers/postActivity.js")
 
 const postActivityHandler = async(req, res)=>{
     try {

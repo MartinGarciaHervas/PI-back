@@ -1,4 +1,4 @@
-const deleteCountryFromActivityController = require("../Controllers/deleteCountryFromActivityController")
+const deleteCountryFromActivityController = require("../Controllers/deleteCountryFromActivityController.js")
 
 const deleteCountryFromActivityHandler = async(req, res)=>{
     try {
