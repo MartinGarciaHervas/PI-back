@@ -12,7 +12,7 @@ const RecordModel = require('./models/Record')
 
 const sequelize = new Sequelize(
   `${POSTGRES_URL_NON_POOLING}`,
-  { logging: false, native: false, dialect: "postgres", dialectModule: "pg" });
+  { logging: false, native: false, dialect: "postgres", dialectModule: pg });
 
 
 //Ejecuto la funcion de cada modelo
