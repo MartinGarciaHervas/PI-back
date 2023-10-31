@@ -1,6 +1,6 @@
 require("dotenv").config();
 const { Sequelize } = require("sequelize");
-const {pg} = require("pg")
+const {pg} = require("pg");
 const { POSTGRES_URL_NON_POOLING } = process.env;
 
 //Importo Los Modelos
@@ -25,8 +25,8 @@ RecordModel(sequelize);
 
 const { Country, Activity } = sequelize.models;
 
-Country.belongsToMany(Activity, {through: 'country_activitiess'})
-Activity.belongsToMany(Country, {through: 'country_activitiess'})
+Country.belongsToMany(Activity, {through: 'country_activities'})
+Activity.belongsToMany(Country, {through: 'country_activities'})
 
 
 module.exports = {

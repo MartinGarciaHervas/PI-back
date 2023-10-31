@@ -20,12 +20,13 @@
     "firebase-admin": "^11.11.0",
     "json-server": "^0.17.3",
     "morgan": "^1.10.0",
-    "nodemon": "^2.0.22",
+    "nodemon": "^3.0.1",
     "npm-run-all": "^4.1.5",
     "pg": "^8.11.3",
     "pg-hstore": "^2.3.4",
+    "postgres": "^3.4.2",
     "sequelize": "^6.31.1",
-    "vercel": "^32.5.0"
+    "vercel": "^32.3.0"
   },
   "devDependencies": {
     "jest": "^29.7.0",
