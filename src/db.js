@@ -25,8 +25,8 @@ RecordModel(sequelize);
 
 const { Country, Activity } = sequelize.models;
 
-Country.belongsToMany(Activity, {through: 'country_activities'})
-Activity.belongsToMany(Country, {through: 'country_activities'})
+Country.belongsToMany(Activity, {through: 'country_activitiess'})
+Activity.belongsToMany(Country, {through: 'country_activitiess'})
 
 
 module.exports = {
