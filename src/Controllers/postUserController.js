@@ -2,9 +2,9 @@ const { User } = require('../db.js')
 
 const postUserController = async (user) => {
     try {
-        const oldUser = await User.findOne({where: {email:user.email} || {username: user.username}})
-        const newUser = await User.create({ email: user.email, password: user.password, username: user.username })
-        if(!oldUser){
+        const [oldUser, created] = await User.findOrCreate({where: {email:user.email} || {username: user.username}, defaults: {email: user.email, password: user.password, username: user.username}})
+        
+        if(created){
             return(true)
         }
         return new Error('Usuario o email ya existe')
