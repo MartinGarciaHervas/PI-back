@@ -1,5 +1,6 @@
 require("dotenv").config();
 const { Sequelize } = require("sequelize");
+const {pg} = require("pg")
 const { POSTGRES_URL_NON_POOLING } = process.env;
 
 //Importo Los Modelos
@@ -11,7 +12,7 @@ const RecordModel = require('./models/Record')
 
 const sequelize = new Sequelize(
   `${POSTGRES_URL_NON_POOLING}`,
-  { logging: false, native: false });
+  { logging: false, native: false, dialect: "postgres", dialectModule: "pg" });
 
 
 //Ejecuto la funcion de cada modelo
